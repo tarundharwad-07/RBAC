@@ -1,182 +1,70 @@
+# Getting Started with Create React App
 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
----
+## Available Scripts
 
-**Role-Based Access Control (RBAC) Dashboard**
+In the project directory, you can run:
 
-1) **Project Overview**
+### `npm start`
 
-This project is an admin dashboard for managing users, roles, and permissions in a Role-Based Access Control (RBAC) system. The dashboard allows administrators to:
-- View and manage users
-- Create, edit, and delete roles
-- Assign permissions to roles and users
-- Manage user status (active/inactive)
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The dashboard is built using **React.js** and styled with **Bootstrap** to ensure a responsive and user-friendly interface.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
----
+### `npm test`
 
-2) **Features**
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-- **User Management**:
-  - View, add, edit, and delete users.
-  - Assign roles to users.
-  - Toggle user status (active/inactive).
-  
-- **Role Management**:
-  - Create, edit, and delete roles.
-  - Assign permissions to roles (e.g., Read, Write, Delete).
-  
-- **Permissions Handling**:
-  - View and manage permissions for different roles.
-  - Dynamic permission grid to assign or modify permissions.
+### `npm run build`
 
-- **Responsive Design**:
-  - The UI adapts to different devices, including desktops, tablets, and mobile devices, using the **Bootstrap grid system**.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-- **Context-Based State Management**:
-  - The app uses **React Context** to manage users, roles, and permissions across the app.
-  
----
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-3) **Setup Instructions**
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Follow the steps below to set up and run the project locally.
+### `npm run eject`
 
-4) **Prerequisites**
-- Ensure that **Node.js** (v16.x or later) is installed on your machine. You can download Node.js from [here](https://nodejs.org/).
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
- **1. Clone the repository**
-```bash
-git clone https://github.com/your-username/rbac-dashboard.git
-```
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
- **2. Navigate to the project directory**
-```bash
-cd rbac-dashboard
-```
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
- **3. Install dependencies**
-Run the following command to install all the required dependencies:
-```bash
-npm install
-```
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
- **4. Run the project**
-After the dependencies are installed, start the development server:
-```bash
-npm start
-```
+## Learn More
 
-This will start the app and open it in your default browser at `http://localhost:3000`.
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
- **5. Accessing the App**
-- The app will be accessible at `http://localhost:3000/` in your browser.
-- You will see the **admin dashboard** where you can manage users, roles, and permissions.
+To learn React, check out the [React documentation](https://reactjs.org/).
 
----
+### Code Splitting
 
-5) **Directory Structure**
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-The project is organized into several components to keep the code modular and maintainable. Here's the structure:
+### Analyzing the Bundle Size
 
-```
-src/
-├── components/
-│   ├── Users/
-│   │   ├── UserTable.jsx           # Displays the list of users
-│   │   ├── UserFormModal.jsx       # Modal for adding/editing users
-│   │   ├── UserActions.jsx         # Handles actions like editing and deleting users
-│   │   └── UserContext.js          # React Context to manage user state
-│   ├── Roles/
-│   │   ├── RoleTable.jsx           # Displays the list of roles
-│   │   ├── RoleFormModal.jsx       # Modal for adding/editing roles
-│   │   └── RoleContext.js          # React Context to manage role state
-│   ├── Permissions/
-│   │   ├── PermissionGrid.jsx      # Displays the permission grid for roles
-│   │   └── PermissionContext.js    # React Context to manage permissions state
-│   └── Layout/
-│       ├── Navbar.jsx              # Navbar component
-│       └── Sidebar.jsx             # Sidebar for navigation
-├── pages/
-│   ├── UsersPage.jsx              # Users page
-│   ├── RolesPage.jsx              # Roles page
-│   └── PermissionsPage.jsx        # Permissions page
-├── utils/
-│   ├── api.js                     # Utility functions for API calls (mocked)
-│   └── mockData.js                # Mock data for testing (users, roles, etc.)
-├── App.js                         # Main App component with routing and context
-└── index.js                       # Entry point of the application
-```
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
----
+### Making a Progressive Web App
 
-6) **How the Application Works**
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
- **1. User Management**
-- Users can be **viewed**, **added**, **edited**, and **deleted** from the user table.
-- Users can be assigned roles, and their status can be toggled between **active** and **inactive**.
+### Advanced Configuration
 
- **2. Role Management**
-- Roles can be **created**, **edited**, and **deleted**.
-- Each role can have specific **permissions** assigned (e.g., **Read**, **Write**, **Delete**).
-- You can assign multiple roles to a user and manage their access levels via these roles.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
- **3. Permissions Management**
-- Permissions are displayed in a **dynamic grid** format, where you can assign **Read**, **Write**, or **Delete** permissions to each role.
-- Permissions are managed for each role, and these roles are then assigned to users.
+### Deployment
 
- **4. React Context for State Management**
-- **UserContext**, **RoleContext**, and **PermissionContext** are used to manage and share state across the application.
-- This ensures that the data remains consistent and accessible across different components.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
- **5. Routing and Navigation**
-- The app uses **React Router** for navigation, with three main pages:
-  - `/users`: Displays the user management interface.
-  - `/roles`: Displays the role management interface.
-  - `/permissions`: Displays the permission grid.
+### `npm run build` fails to minify
 
- **6. Responsive UI**
-- The layout uses **Bootstrap** to ensure the app is responsive and adapts to different screen sizes.
-- On mobile devices, the sidebar collapses into a hamburger menu, and the layout adjusts for smaller screens.
-
----
-
-7) **Future Improvements**
-
-If this project were to be further developed, some features that could be added include:
-
-- **Authentication & Authorization:** Add login functionality to ensure only authorized users can access the dashboard.
-- **Backend Integration:** Implement a real API to manage users, roles, and permissions dynamically.
-- **Real-Time Data Sync:** Allow the app to update data in real-time via WebSockets or polling from a backend.
-- **Bulk Actions:** Enable bulk user actions, such as assigning roles or deleting users.
-- **Detailed User Logs:** Track changes made to users, roles, and permissions for auditing purposes.
-
----
-
-8) **Contributing**
-
-If you would like to contribute to this project, feel free to fork the repository and create a pull request. Please ensure that your changes are well-documented and tested.
-
----
-
-
-
----
-
-9) **Contact Information**
-
-For any questions or inquiries, feel free to reach out to:
-- **Email:** tarundharwad15@gmail.com
-- **GitHub:** [tarundharwad-07]((https://github.com/tarundharwad-07)
-
----
-
-10) **Acknowledgments**
-- This project was inspired by the need to manage roles and permissions efficiently in admin dashboards.
-- Thanks to the **React.js** community and the **Bootstrap** framework for providing the tools to build this app quickly.
-
----
-
-
-
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
